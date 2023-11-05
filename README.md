@@ -1,2 +1,2 @@
-# AppetizersApp
+# SwiftUI - Practice
  
