@@ -34,7 +34,7 @@ struct AccountView: View {
                 }
                 .toggleStyle(SwitchToggleStyle(tint: .red))
             }
-            .navigationTitle("Muntasir 🏀 🇧🇩")
+            .navigationTitle("Account")
         }
         .alert(item: $viewModel.alertItem) { alertitem in
             Alert(title: Text(alertitem.title),
