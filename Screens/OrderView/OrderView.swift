@@ -29,9 +29,10 @@ struct OrderView: View {
                     Button{
                         
                     }label: {
-                        GridButtonView(price:order.totalPrice)
-                            .padding(.bottom,30)
+                        Text("$\(order.totalPrice, specifier:"%0.2f") - Add to Order")
                     }
+                    .standaryButtonStyle()
+                    .padding(.bottom,30)
                 }
                 if order.items.isEmpty{
                     EmptyState()

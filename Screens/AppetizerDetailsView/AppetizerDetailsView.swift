@@ -59,9 +59,10 @@ struct AppetizerDetailsView: View {
                 order.addItem(appetizer: appetizer)
                 willShowDetails = false
             } label: {
-                GridButtonView(price: appetizer.price)
-                    .padding(.bottom, 30)
+                Text("$\(appetizer.price, specifier:"%0.2f") - Add to Order")
             }
+            .padding(.bottom, 30)
+            .standaryButtonStyle()
             
         }
         .frame(width: 300,height: 525)
